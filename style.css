@@ -1,12 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Noto Sans JP', sans-serif;  
+}
+#link{
+    text-decoration: none;
+    font-size: small;
+}
 #headerLeft{
     float:left;
-    width:50%
 }
 
 #headerRight{
     float:right;
-    
+}
+
+
+
+#searchglass{
+    float:left;
 }
 
 
@@ -14,13 +30,22 @@
 
 #mainSection{
     text-align: center;
-    margin: 50;
     position: relative;
-    top: 50%;
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
 }
 
+#googleSearch{
+    opacity: .5;
+    height: 30px;
+    width: 115px;
+    float: center;
+}
+
+#randomizeButton{
+    opacity: .5;
+    height: 30px;
+    width: 150px;
+    float: center;
+}
 
 #footerLeft{
     position:fixed;
@@ -46,8 +71,12 @@
     text-align: right;
 }
 
-form{
-    border-radius:30px
+.searchbar{ 
+    width:325px;
+    height: 35px;
+    border-radius: 20px;
+    border-color: #cfcfcf
+
 }
 
 td{
