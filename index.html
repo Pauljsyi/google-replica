@@ -7,56 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <table id="headerLeft" cellspacing="20" >
-        <tr>
-            <td><a href="#">About</a></td>
-            <td><a href="#">Store</a></td>
+    <div id="headerLeft" cellspacing="20" >
+            <a href="#">About</a>
+            <a href="#">Store</a>
+    </div>
 
-            
-        </tr>   
-    </table>
+    <div id="headerRight" cellspacing = "20">
 
-    <table id="headerRight" cellspacing = "20">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <img src="googleappsicon2.png" alt="google app icon" width="15" height="15">
+            <img id="googleAvatar" src="googleaccountbutton1.png" alt="google account avatar" width="20" height="20">
+
+    </div>
+
+    <!-- <table>
         <tr>
-            <td><a href="#">Gmail</a></td>
-            <td><a href="#">Images</a></td>
-            <br><td><img src="googleappsicon2.png" alt="google app icon" width="15" height="15"></td>
-        
-            <td><img src="googleaccountbutton1.png" alt="google account avatar" width="25" height="25"></td>
+           <td>
+            <div class="left">LEFT</div>
+            <div class="right">RIGHT</div>
+           </td>
         </tr>
-    </table> -->
+     </table>
 
     <table id="header" cellspacing="20" >
         <tr>
             <td><a href="#">About</a></td>
             <td><a href="#">Store</a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
-            <td><a href="#"></a></td>
+
             <td><a href="#">Gmail</a></td>
             <td><a href="#">Images</a></td>
             <br><td><img src="googleappsicon2.png" alt="google app icon" width="15" height="15"></td>
@@ -64,28 +42,39 @@
             <td><img src="googleaccountbutton1.png" alt="google account avatar" width="25" height="25"></td>
             
         </tr>   
-    </table>
+    </table> -->
 
     <div class="container" id=mainSection><br><br><br><br><img src="googlelogo_color_272x92dp.png" alt="Google logo">
         <form id="form" class="form">
+            <br>
             <input type="text" placeholder="ask me anything">
         </form>
-        <button>Google Search</button>
+        <br>
+        <button id="googleSearch">Google Search</button>
         <button id="randomizeButton">I'm feeling productive</button>
+        <br><br><br>
         <li><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">Check out recent media trends</a></li>
     </div>
     <div class="container">
-        <hr>
-        <table id="footer">
-            <tr>
-                <td><a href="https://lovecalczone.com/calculator/12522b2c/">Advertising</a></td>
-                <td><a href="https://www.ebay.com/p/8031091069">Business</a></td>
-                <td><a href="https://alwaysjudgeabookbyitscover.com/">How Search works</a></td>
-                <td><a href="https://trypap.com/">Privacy</a></td>
-                <td><a href="http://eelslap.com/">Terms</a></td>
-                <td><a href="https://thatsthefinger.com/">Settings</a></td>
-            </tr>
-        </table>
+        
+        <div id="footerLeft">
+            <a href="https://lovecalczone.com/calculator/12522b2c/">Advertising</a>
+            <a href="https://www.ebay.com/p/8031091069">Business</a>
+            <a href="https://alwaysjudgeabookbyitscover.com/">How Search works</a>
+        </div>
+
+        <div id="footerCenter">
+            <a href="#">Carbon Neutral Since 2007</a>
+
+        </div>
+
+        <div id="footerRight">
+            <a href="https://trypap.com/">Privacy</a>
+            <a href="http://eelslap.com/">Terms</a>
+            <a href="https://thatsthefinger.com/">Settings</a>
+        </div>
+
+        
     </div>
     <script src="script.js"></script>
 </body>
