@@ -10,6 +10,8 @@ body {
 #link{
     text-decoration: none;
     font-size: small;
+    color: black;
+    font-weight: ;
 }
 #headerLeft{
     float:left;
@@ -19,16 +21,55 @@ body {
     float:right;
 }
 
-
-
-#searchglass{
-    float:left;
+#googleApp{
+    position:relative;
+    vertical-align: middle;
 }
 
+#googleAvatar{
+    position:relative;
+    vertical-align: middle;
+}
+
+#theform{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#form{
+    position: relative;
+    display: block;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 400px;
+    height: 45px;
+    border-radius: 50px;
+    outline: none;
+}
 
 #searchBar{
+    box-sizing: border-box;
+    padding-top: 14px;
+    width: 325px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
 
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+#googlemic{
+    padding-top: 7px
+}
+
+#searchGlass{
+    /* float:left; */
+    padding-bottom: 4px;
+    opacity: .5;
+}
+
+/* #searchBar{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
@@ -36,9 +77,9 @@ body {
     height: 45px;
     border-radius: 50px;
     outline: none;
-}
+} */
 
-#searchBar:hover{
+#form:hover{
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
@@ -84,14 +125,6 @@ body {
     bottom:0;
     width:100%;
     text-align: right;
-}
-
-.searchbar{ 
-    width:325px;
-    height: 35px;
-    border-radius: 20px;
-    border-color: #cfcfcf
-
 }
 
 td{
