@@ -1,29 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 * {
     box-sizing: border-box;
+    /* text-decoration: none; */
 }
 
 body {
-    font-family:'Noto Sans JP', sans-serif;  
+    font-family:'Roboto', sans-serif;  
 }
-#link{
+
+.link{
     text-decoration: none;
-    font-size: small;
-    color: black;
-    font-weight: ;
+    font-size: 13.1px;
+    color: rgb(85, 85, 85);
 }
+
+.link:hover{
+    text-decoration: underline;
+}
+
 #headerLeft{
-    float:left;
+    padding-top: 11px;
+    text-align:left;
 }
 
 #headerRight{
-    float:right;
+    padding-top: 3px;
+    text-align: right;
 }
 
 #googleApp{
     position:relative;
     vertical-align: middle;
+    
 }
 
 #googleAvatar{
@@ -31,7 +39,7 @@ body {
     vertical-align: middle;
 }
 
-#theform{
+.theform{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -53,14 +61,12 @@ body {
 #searchBar{
     vertical-align: middle;
     box-sizing: border-box;
-    /* padding-top: 10px; */
     margin-bottom: 15px;
     width: 370px;
     border: none;
     outline: none;
     background-color: transparent;
     font-size: 14px;
-    
 }
 
 #googlemic{
@@ -68,23 +74,13 @@ body {
 }
 
 #searchGlass{
-    /* float:left; */
     padding-bottom: 4px;
     opacity: .5;
 }
 
-/* #searchBar{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 400px;
-    height: 45px;
-    border-radius: 50px;
-    outline: none;
-} */
 
 #form:hover{
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px .5px rgba(104, 104, 104, 0.5);
 }
 
 
@@ -98,6 +94,12 @@ body {
     height: 30px;
     width: 115px;
     float: center;
+    outline: none;
+    border: none;
+}
+
+#googleSearch:hover{
+    box-shadow: 0 0 20px 1px rgba(0, 140, 186, 0.5);
 }
 
 #randomizeButton{
@@ -105,15 +107,31 @@ body {
     height: 30px;
     width: 150px;
     float: center;
+    outline: none;
+    border: none;
 }
 
-#footerLeft{
+#randomizeButton:hover{
+    box-shadow: 0 0 10px 1px rgba(0, 140, 186, 0.5);
+}
+#footerRight{
     position:fixed;
     left:0;
     bottom:0;
+    width: 100%;
+    text-align:right;
+    padding: 5px;
+}
+#footerLeft{
+    position:absolute;
+    left:0;
+    bottom: 0;
     width:100%;
     text-align: left;
+    padding: 5px;
 }
+
+
 
 #footerCenter{
     position:fixed;
@@ -121,26 +139,23 @@ body {
     bottom:0;
     width:100%;
     text-align: center;
+    padding: 5px;
 }
 
-#footerRight{
-    position:fixed;
-    left:0;
-    bottom:0;
-    width:100%;
-    text-align: right;
-}
 
-td{
+
+/* td{
     position: relative;
 }
+
 td.left{
     position: absolute; 
     text-align: left; 
     left: 0;
 }
+
 td.right{
     position: absolute; 
     text-align: right; 
     right: 0;
-}
+} */

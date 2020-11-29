@@ -1,11 +1,19 @@
-const randomizeButton = document.getElementById('randomizeButton')
+let googleButton = document.querySelector('#googleSearch');
 
-function randomizeText(idElement){
-    if(idElement==1){
-        document.getElementById('element'+idElement).innerHTML ='<a href="http://www.google.com">Google</a>';
-    } else if(idElement==2){
-        document.getElementById('element'+idElement).innerHTML ='<a href="http://woork.blogspot.com">Woork</a>';
+
+
+
+function getRandomColor(){
+    let letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++){
+        color+= letters[Math.floor(Math.random() * 16)];
     }
+
+    return color;
 }
 
-// randomizeButton.addEventListener('')
+getRandomColor();
+
+googleButton.addEventListener('click', () => googleButton.style.backgroundColor = getRandomColor())
+
